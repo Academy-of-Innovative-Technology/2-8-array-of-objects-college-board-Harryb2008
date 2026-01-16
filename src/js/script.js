@@ -1,4 +1,3 @@
-// 1. Create Data (Array of Objects)
 const selections = [
     {
         name: "Farmingdale State College",
@@ -26,16 +25,16 @@ const selections = [
     }
 ];
 
-// 2. Select the container
+
 const container = document.querySelector('#card-container');
 
-// 3. Advanced Challenge: Use an iterator to display data
+
 function displaySelections() {
-    // Clear container just in case
+
     container.innerHTML = '';
 
     selections.forEach(item => {
-        // Create HTML template string
+       
         const cardHTML = `
             <div class="card">
                 <img src="${item.image}" alt="${item.name}" class="card-image">
@@ -49,10 +48,9 @@ function displaySelections() {
             </div>
         `;
         
-        // Insert data into HTML
+        
         container.insertAdjacentHTML('beforeend', cardHTML);
     });
 }
 
-// Run the function to display cards
 displaySelections();
